@@ -15,16 +15,10 @@ Before installing and using this package, make sure your environment meets the f
 
 1. Install the library:
 
-    1. Manually/Locally:
-
-        a) Copy the library to the `/libraries` folder in the root of your project.
-
-        b) Cloning repository (if exists), go to the root of your project and run the following commands:
-        ```bash
-        git clone https://github.com/efernandess/visittracker.git libraries/efernandess/visittracker
-        ```
-
-        After steps `a` or `b`, you must add the following code to your `composer.json` file:
+    1. Manually/Locally: 
+   
+        Add the below to your composer.json
+        
         ```json
         "require": {
             ...
@@ -33,13 +27,22 @@ Before installing and using this package, make sure your environment meets the f
         "repositories": [
             ...
             {
-                "type": "path",
-                "url": "./libraries/efernandess/visittracker"
+                "type": "github",
+                "url": "https://github.com/efernandess/visittracker.git"
             }
         ],
         ```
+        Then run:       
 
-    2. Via [packagist.org](https://packagist.org) (if exists):
+       ```bash
+       composer install
+       ```
+       or
+       ```bash
+       composer update
+       ```
+
+    3. Via [packagist.org](https://packagist.org) (if exists):
         ```bash
         composer require efernandess/visittracker
         ```
