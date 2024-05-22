@@ -1,0 +1,33 @@
+{
+    "name": "edsonfernandes/visittracker",
+    "description": "A PHP package to track websites visits.",
+    "type": "library",
+    "keywords": [
+        "Visits",
+        "Tracking",
+        "Website"
+    ],
+    "autoload": {
+        "psr-4": {
+            "EdsonFernandes\\VisitTracker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EdsonFernandes\\VisitTracker\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "authors": [
+        {
+            "name": "Edson Fernandes",
+            "email": "edson1305fernandes@gmail.com"
+        }
+    ]
+}
