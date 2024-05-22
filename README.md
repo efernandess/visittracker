@@ -21,27 +21,27 @@ Before installing and using this package, make sure your environment meets the f
 
         b) Cloning repository (if exists), go to the root of your project and run the following commands:
         ```bash
-        git clone https://github.com/edsonfernandes/visittracker.git libraries/edsonfernandes/visittracker
+        git clone https://github.com/efernandess/visittracker.git libraries/efernandess/visittracker
         ```
 
         After steps `a` or `b`, you must add the following code to your `composer.json` file:
         ```json
         "require": {
             ...
-            "edsonfernandes/visittracker": "dev-main"
+            "efernandess/visittracker": "dev-main"
         },
         "repositories": [
             ...
             {
                 "type": "path",
-                "url": "./libraries/edsonfernandes/visittracker"
+                "url": "./libraries/efernandess/visittracker"
             }
         ],
         ```
 
     2. Via [packagist.org](https://packagist.org) (if exists):
         ```bash
-        composer require edsonfernandes/visittracker
+        composer require efernandess/visittracker
         ```
 
 ## Configuration
