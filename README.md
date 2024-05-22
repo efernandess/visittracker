@@ -95,7 +95,7 @@ DB_PORT=
 
 4. **[IMPORTANT]** CSRF configuration (if necessary): **You must add the route `/visit-tracking` to the exceptions**.
 
-5. Copy the file `/vendor/visit-tracker/public/tracker.js` and place it in a _public folder_ that you can include in your html. Include the JavaScript script at the end of the body tag of your HTML:
+5. Copy the file `/vendor/efernandess/visittracker/public/tracker.js` and place it in a _public folder_ that you can include in your html. Include the JavaScript script at the end of the body tag of your HTML:
 
 ```html
 <!DOCTYPE html>
@@ -113,7 +113,7 @@ DB_PORT=
 </html>
 ```
 
-5. To register a visit, you need to create a `POST` route in your application and call the `postRegisterVisit` method of the library. Here's an example using the Slim Framework:
+6. To register a visit, you need to create a `POST` route in your application and call the `postRegisterVisit` method of the library. Here's an example using the Slim Framework:
 
 ```php
 $app->post('/visit-tracking', function () {
@@ -122,7 +122,7 @@ $app->post('/visit-tracking', function () {
 ```
 Make sure that the route name is `/visit-tracking`.
 
-6. To retrieve visit data, create a `GET`  route in your application and call the `getRetrieveData` method of the library. Here's an example using the Slim Framework:
+7. To retrieve visit data, create a `GET`  route in your application and call the `getRetrieveData` method of the library. Here's an example using the Slim Framework:
 
 ```php
 $app->get('/visit-tracking', function () {
